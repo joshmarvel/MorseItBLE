@@ -1,7 +1,7 @@
 # MorseItBLE
 A simple Bluetooth interface to use a hardware CW key with the Morse-it app
 ### Morse-it Bluetooth Low Emissions Hardware Key
-Read more over on my site: [M0WYP.com](https://www.m0wyp.com/2020/05/08/morse-it-ble-hardware-cw-key/)
+Read more over on my site: [M0WYP.com](https://joshuamarvel.com/2020/05/08/morse-it-ble-hardware-cw-key/)
 
 #### This project utilizes (at minimum):
 
