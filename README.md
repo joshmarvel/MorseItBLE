@@ -33,4 +33,4 @@ Read more over on my site: [M0WYP.com](https://www.m0wyp.com/2020/05/08/morse-it
 11. Open Morse-it, go the "Tap" tab and test sending.
 
 
-#### A huge thanks to the work done by Chris Young on his [tutorials](https://learn.adafruit.com/ios-switch-control-using-ble) and [GitHub page](https://github.com/cyborg5/iOS_switch_control/).
+#### A huge thanks to the work done by Chris Young on his [tutorials](https://learn.adafruit.com/ios-switch-control-using-ble) and [GitHub page](https://github.com/cyborg5/iOS_switch_control/).  This project is adapted and modified from his original work and is licensed under [Creative Commons ShareALike](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
