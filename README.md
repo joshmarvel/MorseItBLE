@@ -10,6 +10,7 @@ Read more over on my site: [M0WYP.com](https://www.m0wyp.com/2020/05/08/morse-it
 3. [Adafruit Feather 32u4 Bluefruit LE](https://www.adafruit.com/product/2829)
 4. And a physical CW key of your choice.
 5. Various bits of wire and a micro USB cable
+6. Soldering iron and solder, wire strippers and other basic electronics tools.
 
 #### Procedure
 1. Update the firmware on Feather
