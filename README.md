@@ -28,7 +28,6 @@ Read more over on my site: [M0WYP.com](https://joshuamarvel.com/2020/05/08/morse
    1. GND - Common on the CW key
    2. PIN A0 - Dit(.) for iambic keys or both for straight keys
    3. PIN A1 - Dah(_) for iambic keys
-   4. PIN A2 - DitDah(._) 
 10. On your iOS device, go to "Settings" -> "Bluetooth" and discover "MorseKey"
 11. Open Morse-it, go the "Tap" tab and test sending.
 
