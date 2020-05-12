@@ -41,7 +41,7 @@ void Drop(void) {
   }
 
  
-//Main Function, Sends key presses as BLE keyboard characters and monitors battery voltage
+//Main Function, Sends key presses as BLE keyboard characters
 void pressKeyCode (byte c) {
   ble.print(F("AT+BLEKEYBOARDCODE=00-00-"));
   if (c<0x10)ble.print("0");
@@ -65,27 +65,6 @@ void pressKeyCode (byte c) {
   };
   ble.println(F("AT+BLEKEYBOARDCODE=00-00"));
   MESSAGE(F("Released"));
-
-  //Battery Voltage Monitoring, Blue LED for external USB power, Green for Normal power, Red for charge needed.
-  float bvolt = analogRead(VBAT);
-  bvolt *= 2;
-  bvolt *= 3.3;
-  bvolt /= 1024;
-  if (bvolt > 4.2){
-    analogWrite(BLUE, 255);
-    analogWrite(RED, 0);
-    analogWrite(GREEN, 0);
-  }
-  else if (bvolt <= 4.2 && bvolt >= 3.4) {
-    analogWrite(GREEN, 255);
-    analogWrite(BLUE, 0);
-    analogWrite(RED, 0);
-  }
-  else if (bvolt < 3.4){
-    analogWrite(RED, 255);
-    analogWrite(GREEN, 0);
-    analogWrite(BLUE, 0);
-  }
 }
 
 //Setup device and assign pinModes
@@ -109,5 +88,26 @@ void loop() {
     case DO_DIT: pressKeyCode(0x50);break;  //left arrow
     case DO_DAH: pressKeyCode(0x4F);break;  //right arrow
     case DO_DITDAH: pressKeyCode(0x52);break;  //up arrow
+  }
+  
+  //Battery Voltage Monitoring, Blue LED for external USB power, Green for Normal power, Red for charge needed.
+  float bvolt = analogRead(VBAT);
+  bvolt *= 2;
+  bvolt *= 3.3;
+  bvolt /= 1024;
+  if (bvolt > 4.2){
+    analogWrite(BLUE, 255);
+    analogWrite(RED, 0);
+    analogWrite(GREEN, 0);
+  }
+  else if (bvolt <= 4.2 && bvolt >= 3.4) {
+    analogWrite(GREEN, 255);
+    analogWrite(BLUE, 0);
+    analogWrite(RED, 0);
+  }
+  else if (bvolt < 3.4){
+    analogWrite(RED, 255);
+    analogWrite(GREEN, 0);
+    analogWrite(BLUE, 0);
   }
 }
