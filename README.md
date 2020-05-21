@@ -1,5 +1,5 @@
 # MorseItBLE
-A simple Bluetooth interface to use a hardware CW key with the Morse-it app
+A simple Bluetooth interface to use a hardware CW key with the Morse-it app with battery charge indication and reset functionality
 ### Morse-it Bluetooth Low Emissions Hardware Key
 Read more over on my site: [M0WYP.com](https://m0wyp.com/2020/05/08/morse-it-ble-hardware-cw-key/)
 
@@ -26,8 +26,12 @@ Read more over on my site: [M0WYP.com](https://m0wyp.com/2020/05/08/morse-it-ble
 8. Upload the project to the board
 9. Wire the CW key to the board
    1. GND - Common on the CW key
-   2. PIN A0 - Dit(.) for iambic keys or both for straight keys
-   3. PIN A1 - Dah(_) for iambic keys
+   2. PIN A0 - Red LED
+   3. PIN A1 - Green LED
+   4. PIN A2 - Blue LED
+   5. PIN A3 - RESET button
+   6. PIN A4 - Dah(_) for iambic keys
+   7. PIN A5 - Dit(.) for iambic keys or both for straight keys
 10. On your iOS device, go to "Settings" -> "Bluetooth" and discover "MorseKey"
 11. Open Morse-it, go the "Tap" tab and test sending.
 
