@@ -1,5 +1,5 @@
 //Morse-it Bluetooth Hardware Key
-//THIS VERSION IS FOR iOS 14 AND NEWER ONLY
+//THIS VERSION IS FOR iOS 14 AND NEWER ONLY.
 
 //Pin A0 is for RED LED
 //Pin A1 is for Green LED
