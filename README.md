@@ -6,6 +6,7 @@ Read more over on my site: [M0WYP.com](https://m0wyp.com/2020/05/08/morse-it-ble
 ### New in Version 2
 #### For iOS version 14 or greater only
 Get [version 1.0](https://github.com/joshmarvel/MorseItBLE/releases/tag/V1.0) for older iOS versions.
+
 Utilizes iOS 14's ability to repeat a key hold and therefore eliminates the need to send the up arrow.  This should solve a great number of timing issues in the previous version.  However, if you find that there are timing errors (this seems to be related to various types of Apple hardware), make adjustments to the delay lines 72 and 80 in MorseItBLE.ino.
 
 
