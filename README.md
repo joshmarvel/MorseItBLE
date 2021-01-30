@@ -3,6 +3,11 @@ A simple Bluetooth interface to use a hardware CW key with the Morse-it app with
 ### Morse-it Bluetooth Low Emissions Hardware Key
 Read more over on my site: [M0WYP.com](https://m0wyp.com/2020/05/08/morse-it-ble-hardware-cw-key/)
 
+### New in Version 2
+#### For iOS version 14 or greater only
+Utilizes iOS 14's ability to repeat a key hold and therefore eliminates the need to send the up arrow.  This should solve a great number of timing issues in the previous version.  However, if you find that there are timing errors (this seems to be related to various types of Apple hardware), make adjustments to the delay lines 72 and 80 in MorseItBLE.ino.
+
+
 #### This project utilizes (at minimum):
 
 1. An iOS device with Bluetooth LE capabilities

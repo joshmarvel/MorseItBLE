@@ -2,7 +2,7 @@
  *  iOS switch control example code. We have moved it here to make
  *  the main source code more legible.
  */
- 
+
 #include <SPI.h>
 #include "Adafruit_BLE.h"
 #include "Adafruit_BluefruitLE_SPI.h"
@@ -24,7 +24,7 @@ Adafruit_BluefruitLE_SPI ble(BLUEFRUIT_SPI_CS, BLUEFRUIT_SPI_IRQ, BLUEFRUIT_SPI_
   #define MESSAGE(m) {}
   #define FATAL(m) while (1);
 #endif
- 
+
 void initializeBluefruit (void) {
   //Initialize Bluetooth
   if ( !ble.begin(MY_DEBUG))
@@ -54,5 +54,5 @@ void initializeBluefruit (void) {
   if (! ble.reset() ) {
     FATAL(F("err:SW reset"));
   }
- 
+
 }
