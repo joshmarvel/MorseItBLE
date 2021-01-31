@@ -42,5 +42,7 @@ Utilizes iOS 14's ability to repeat a key hold and therefore eliminates the need
 10. On your iOS device, go to "Settings" -> "Bluetooth" and discover "MorseKey"
 11. Open Morse-it, go the "Tap" tab and test sending.
 
+![Completed Project](https://github.com/joshmarvel/MorseItBLE/blob/master/CompletedProject.jpeg?raw=true)
+
 
 #### A huge thanks to the work done by Chris Young on his [tutorials](https://learn.adafruit.com/ios-switch-control-using-ble) and [GitHub page](https://github.com/cyborg5/iOS_switch_control/).  This project is adapted and modified from his original work and is licensed under [Creative Commons ShareALike](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
