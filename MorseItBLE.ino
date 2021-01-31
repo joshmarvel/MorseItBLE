@@ -1,5 +1,5 @@
 //Morse-it Bluetooth Hardware Key
-//THIS VERSION IS FOR iOS 14 AND NEWER ONLY.
+//THIS VERSION IS FOR iOS 14 AND NEWER ONLY
 
 //Pin A0 is for RED LED
 //Pin A1 is for Green LED
@@ -67,17 +67,25 @@ void setup() {
 
 //Defines the characters to be sent.
 void loop() {
-   if (digitalRead(DIT) == LOW){
+  while (digitalRead(DIT) == LOW){
     ble.println(F("AT+BLEKEYBOARDCODE=00-00-50-00-00-00-00")); //Send left arrow key
-    delay(14);  //This can be adjusted if you are experiencing issues with doubled characters or stuck characters, value is in milliseconds
+    if (digitalRead(DIT) == LOW && digitalRead(DAH) == LOW){
+      ble.println(F("AT+BLEKEYBOARDCODE=00-00-50-00-00-00-00")); //Send left arrow key
+      ble.println(F("AT+BLEKEYBOARDCODE=00-00-4F-00-00-00-00")); //Send right arrow key
+    }
+    delay(10);  //This can be adjusted if you are experiencing issues with doubled characters or stuck characters, value is in milliseconds
     if (digitalRead(DIT) == HIGH && digitalRead(DAH) == HIGH){ //release the key
       ble.println(F("AT+BLEKEYBOARDCODE=00-00"));
       }
     }
 
-  if (digitalRead(DAH) == LOW){
+  while (digitalRead(DAH) == LOW){
     ble.println(F("AT+BLEKEYBOARDCODE=00-00-4F-00-00-00-00")); //Send right arrow key
-    delay(14);  //This can be adjusted if you are experiencing issues with doubled characters or stuck characters, value is in milliseconds
+     if (digitalRead(DIT) == LOW && digitalRead(DAH) == LOW){
+      ble.println(F("AT+BLEKEYBOARDCODE=00-00-4F-00-00-00-00")); //Send right arrow key
+      ble.println(F("AT+BLEKEYBOARDCODE=00-00-50-00-00-00-00")); //Send left arrow key
+    }
+    delay(10);  //This can be adjusted if you are experiencing issues with doubled characters or stuck characters, value is in milliseconds
     if (digitalRead(DIT) == HIGH && digitalRead(DAH) == HIGH){ //release the key
       ble.println(F("AT+BLEKEYBOARDCODE=00-00"));
       }
