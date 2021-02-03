@@ -1,5 +1,5 @@
 # Build of Materials
-I've included links to purchase most of the parts at [Adafruit](https://www.adafruit.com/) for ease of purchasing.
+I've included links to purchase most of the parts at [Adafruit](https://www.adafruit.com/) for ease of purchasing.  Not all parts are as pictured.
 
 | Part | Description | Quantity | Link |
 | --- | --- | --- | --- |
@@ -20,7 +20,7 @@ I've included links to purchase most of the parts at [Adafruit](https://www.adaf
 | 6 mm Black Nylon Screw - M2.5 | Main Board Mounting Screws | 8 | [Link](https://www.adafruit.com/product/3299) |
 | 10 mm Black Nylon Standoff - M2.5 | Main Board Mounting Standoffs | 4 | [Link](https://www.adafruit.com/product/3299) |
 | Misc Multicoloured Silicone Wire | Wire | 1 | [Link](https://www.adafruit.com/product/1970) | 
-| Custom Plexiglass Top Case | Case | 1 | Widely Available |
-| Custom Plexiglass Bottom Case | Case | 1 | Widely Available |
+| 3mm Custom Plexiglass Top Case | Case | 1 | Widely Available |
+| 3mm Custom Plexiglass Bottom Case | Case | 1 | Widely Available |
 
 ![Part List](https://github.com/joshmarvel/MorseItBLE/blob/master/Parts.jpeg?raw=true)
